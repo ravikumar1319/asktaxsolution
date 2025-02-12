@@ -26,12 +26,178 @@
     </div>
     <section class="p-5 text-center">
         <h1>Welcome to Ask Tax Solutions Accounting</h1>
-        <p>We provide expert accounting services for individuals and businesses. Contact us today to learn more.</p>
-        <button class="btn btn-transparent">(626) 955-9591</button>
+        <p class="text-gray">We provide expert accounting services for individuals and businesses. Contact us today to
+            learn more.</p>
+        <button class="btn btn-transparent">Find out more</button>
     </section>
-    <section class="bg p-5 text-center">
-        <p class="f-70 text-white">Let Ask Tax Solutions Accounting help you achieve financial success!</p>
+    <section class="bg p-4 text-center">
+        <p class="f-70 mb-1 text-white">Let Ask Tax Solutions Accounting help you achieve financial success!</p>
+        <button class="btn btn-primary">Schedule Now</button>
     </section>
+    <section class="p-5 text-center">
+        <p class="tax-solution">About Ask Tax Solutions</p>
+        <div class="grid-container">
+            <div>
+                <img src="./images/1.webp" alt="" srcset="">
+            </div>
+            <div>
+                <p class="grid-header">Our Experience</p>
+                <p class="text-gray grid-para">With over 10 years of experience in the field, we have had the privilege
+                    of assisting numerous clients with their diverse accounting needs . Our dedicated team of
+                    professionals is highly qualified and constantly staying up-to-date with the latest industry trends
+                    and regulations.</p>
+            </div>
+            <div>
+                <div>
+                    <p class="grid-header">Our Services</p>
+                    <p class="text-gray grid-para">At Ask Tax Solutions, we offer a wide range of accounting services
+                        including tax preparation, bookkeeping, financial statement preparation, and more. We tailor our
+                        services to meet the specific needs of each client.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./images/2.webp" alt="" srcset="">
+            </div>
+            <div>
+                <img src="./images/3.webp" alt="" srcset="">
+            </div>
+            <div>
+                <div>
+                    <p class="grid-header">Our Approach</p>
+                    <p class="text-gray grid-para">We strongly believe in building long-term relationships with our
+                        clients. Our approach is to provide personalized service and to be available whenever our
+                        clients need us. We work closely with our clients to understand their unique needs and goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-4 pt-0">
+        <p class="tax-solution text-center">Contact Us </p>
+        <div class="grid-container">
+
+            <div>
+                <div>
+                    <div class="mb-40">
+                        <p class="grid-header mb-24">Better yet, see us in person!</p>
+                        <p class="text-gray grid-para mb-24">We love our customers, so feel free to visit during normal
+                            business hours.</p>
+                    </div>
+                    <div class="mb-40">
+                        <p class="grid-header mb-24">Ask Tax Solutions</p>
+                        <p class="text-gray grid-para mb-24">1888 SUNNYVIEW OVAL KEASBEY, NEW JERSEY 08832</p>
+                    </div>
+                    <div class="mb-40">
+                        <p class="grid-header mb-24">Hours</p>
+                        <table style="border-spacing: 0px; text-align: left; display: inline-table;"
+                            class="text-gray grid-para">
+                            <tr id="1" style="cursor: pointer;">
+                                <td>
+
+                                    Mon
+                                </td>
+                                <td>
+
+                                    09:00 am – 05:00 pm
+                                </td>
+
+                            </tr>
+                            <tr id="2" style="cursor: auto;">
+                                <td>
+
+                                    Tue
+                                </td>
+                                <td>
+
+                                    09:00 am – 07:00 pm
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr id="3" style="cursor: auto;">
+                                <td>
+
+                                    Wed
+                                </td>
+                                <td>
+
+                                    09:00 am – 05:00 pm
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr id="4" style="cursor: auto;">
+                                <td>
+
+                                    Thu
+                                </td>
+                                <td>
+
+                                    09:00 am – 05:00 pm
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr id="5" style="cursor: auto;">
+                                <td>
+
+                                    Fri
+                                </td>
+                                <td>
+
+                                    09:00 am – 05:00 pm
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr id="6" style="cursor: auto;">
+                                <td>
+
+                                    Sat
+                                </td>
+                                <td>
+
+                                    Closed
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr id="0" style="cursor: auto;">
+                                <td>
+
+                                    Sun
+                                </td>
+                                <td>
+
+                                    Closed
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="./images/contact.webp" alt="" srcset="">
+            </div>
+
+        </div>
+    </section>
+    <div class="banner p-4 disclaimer">
+        <p class="mb-24">
+            <strong class=""> Disclaimer: This website is independent from Sage and is not authorized to make
+                any statement, representation, or warranties or grant any license or permission on behalf of Sage
+                regarding any product, service, or website content. Certain materials made available on or through this
+                website are owned by Sage and cannot be used without the prior written permission of Sage. Sage
+                Software, the Sage Software logos, and the Sage Software product and service names mentioned herein are
+                registered trademarks or trademarks of Sage Software, Inc., or its affiliated entities. All other
+                trademarks are the property of their respective owners. </strong>
+        </p>
+        <p class="text-center">Copyright © <span id="date"></span> All rights reserved</p>
+    </div>
 </body>
+<script>
+    let date = new Date()
+    let year = date.getFullYear()
+    let day = date.getDay()
+    document.getElementById('date').innerText=year
+    document.getElementById(`${day}`).style.fontWeight = "bold"
+    document.getElementById(`${day}`).style.color = "#333"
+</script>
 
 </html>
