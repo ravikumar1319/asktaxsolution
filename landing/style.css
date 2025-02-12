@@ -18,6 +18,13 @@
         .text-gray {
             color: var(--text-color)
         }
+        .text-white{
+            color: #fff
+        }
+
+        .p-5 {
+            padding: 5rem;
+        }
 
         body {
             font-family: Arial, sans-serif;
@@ -71,16 +78,36 @@
             padding: 10px 15px;
         }
 
-        .btn{
+        .btn {
             padding: 1rem 2rem;
             outline: none;
             border-radius: 50px;
-            border: 1px solid transparent ;
+            border: 1px solid transparent;
             cursor: pointer;
         }
 
-        .btn-primary{
+        .btn-primary {
             background-color: var(--primary-color);
+        }
+
+        .btn-transparent {
+            border: 1px solid black;
+            background-color: transparent;
+        }
+
+        .btn:hover {
+            opacity: .5;
+            transition: 0.5s ease-in-out all;
+        }
+
+        .bg {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url(./images/bg.webp);
+            background-repeat: no-repeat;
+            background-size: auto, cover
+        }
+
+        .f-70 {
+            font-size: 70px;
         }
 
         @media (max-width: 768px) {
