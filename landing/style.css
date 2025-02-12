@@ -1,0 +1,119 @@
+        :root {
+            --primary-bg: #2F3135;
+            --primary-color: #2FAD10;
+            --secondary-bg: #f8f9fa;
+            --cta-bg: #28a745;
+            --cta-hover-bg: #218838;
+            --text-color: #ffffff94;
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .text-gray {
+            color: var(--text-color)
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--secondary-bg);
+            text-align: center;
+        }
+
+        .header {
+            background: var(--primary-bg);
+            color: var(--primary-color);
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .logo {
+            font-family: 'Pacifico', cursive;
+            font-weight: 400;
+            font-size: 24px;
+
+        }
+
+        .telephone {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .banner {
+            background: var(--primary-bg);
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-text {
+            padding: 10px 15px;
+        }
+
+        .btn{
+            padding: 1rem 2rem;
+            outline: none;
+            border-radius: 50px;
+            border: 1px solid transparent ;
+            cursor: pointer;
+        }
+
+        .btn-primary{
+            background-color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .telephone {
+                font-size: 10px;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            .telephone {
+                font-size: 8px;
+            }
+        }
